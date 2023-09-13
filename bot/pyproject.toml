@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "help_bot"
+version = "0.1.0"
+description = "Create for Home work 2 in block WEB"
+authors = ["Vladislav B <rolmf85@gmail.com>"]
+readme = "README.md"
+packages = [{include = "bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+prompt-toolkit = "^3.0.39"
+rich = "^13.5.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.0"
+mypy = "^1.5.1"
+flask = "^2.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+help_bot= 'bot.switcher:main'
